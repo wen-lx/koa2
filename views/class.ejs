@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>koa2</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but seeta-enterprise doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <h1>一个小小的表格</h1>
+    <table>
+      <% arr.forEach(function(user) { %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.name %></td>
+          <td><%= user.count %></td>
+          <td><%= user.teacher %></td>
+        </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
