@@ -23,3 +23,15 @@
     </table>
   </body>
 </html>
+
+<script>
+  console.log(123)
+  var request = new XMLHttpRequest();
+  request.open('GET', 'http://127.0.0.1:3001/class', true)
+  request.send(null)
+  request.onreadystatechange = function () {
+      if (request.readyState == 4 && request.status == 200) {
+          console.log(request.responseText);
+      }
+  }
+</script>

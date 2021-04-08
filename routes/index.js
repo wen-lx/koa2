@@ -17,7 +17,6 @@ function classList () {
 }
 router.get('/class', async (ctx, next) => {
   await classList().then(async res => {
-    console.log(ctx, res)
     await ctx.render('class', {
       arr: [{id: 12, name: 1223, count: 223, teacher: 234}]
     })
